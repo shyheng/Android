@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,7 +33,8 @@ public class PopupWin extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e(SHY,"点击");
+                Intent intent = new Intent(PopupWin.this,ListViewActivity2.class);
+                startActivity(intent);
                 popupWindow.dismiss();
             }
         });
