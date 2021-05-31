@@ -1,0 +1,2 @@
+rootProject.name = "ViewPageFragment"
+include ':app'
